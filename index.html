@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body {
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+        margin: 50px;
+
+	}
+
+	.pyramid {
+    	width: 90vw;
+    	text-align: center;
+        
+	}
+
+	.zone {
+    	box-sizing: border-box;
+    	height: 150px;
+    	margin: auto;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    }
+
+	.zone:nth-child(1) {
+    	clip-path: polygon(50% 0, 100% 100%, 0% 100%);
+    	background-color: rgba(2, 66, 100, 0.5);
+    	width: 20%;
+    	align-items: flex-end;
+    	padding-bottom: 8px;
+	}
+
+	.zone:nth-child(2) {
+    	clip-path: polygon(25% 0, 75% 0, 100% 100%, 0 100%);
+    	background-color: rgba(50, 0, 100, 0.5);
+    	width: 40%;
+	}
+
+	.zone:nth-child(3) {
+    	clip-path: polygon(16.6666667% 0, 83.3333333% 0, 100% 100%, 0 100%);
+    	background-color: rgba(500, 0, 100, 0.5);
+    	width: 60%;
+	}
+
+	.zone:nth-child(4) {
+    	clip-path: polygon(12.5% 0, 87.5% 0, 100% 100%, 0 100%);
+    	background-color: rgba(0, 90, 100, 0.5);
+    	width: 80%;
+	}
+
+	.zone:nth-child(5) {
+    	clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%);
+    	background-color: rgba(0, 500, 100, 0.5);
+    	width: 100%;
+	}
+	
+    input[type='text'] {
+    	width: 100%;
+        max-width: 180px;
+        text-align: center;
+    }
+    
+    .zone:nth-child(1) .content input[type='text'] {
+        max-width: 120px;
+    }
+    
+    .zone:hover, .zone:focus {
+    	background-color: rgba(2, 66, 100, 1);
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    
+    button {
+    	word-break: break-all;
+        cursor: pointer;
+    }  
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+   <div class="pyramid">
+      <div class="zone">
+         <div class="content">
+            <input type="text" placeholder="Self-actualization"></input>
+            <br>
+            <button>Save</button>
+         </div>
+      </div>
+      <div class="zone">
+         <div class="content">
+            <input type="text" placeholder="Esteem"></input>
+            <br>
+            <button>Save</button>
+         </div>
+      </div>
+      <div class="zone">
+         <div class="content">
+            <input type="text" placeholder="Love and belonging">
+            <br>
+            <button>Save</button>
+         </div>
+      </div>
+      <div class="zone">
+         <div class="content">
+            <input type="text" placeholder="Safety">
+            <br>
+            <button>Save</button>
+         </div>
+      </div>
+      <div class="zone">
+         <div class="content">
+            <input type="text" placeholder="Physiological">
+            <br>
+            <button>Save</button>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+<script>
+/*
+let defaultWidth = 500;
+let height = 100;
+
+let baseW = defaultWidth * (.20 * [nthchildnumber]%)
+let topW = 400;
+//let topW = (leanR - leanL) * baseW;
+
+
+
+let totalLean = 1;
+
+let leanR = totalLean - leanL;
+let leanL = leanR - (topW/baseW);
+//topW = baseW * (leanR - leanL);
+
+alert(leanL);*/
+</script>
+</body>
+</html>
